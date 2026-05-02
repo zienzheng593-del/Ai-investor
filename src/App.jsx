@@ -983,7 +983,7 @@ ${stockList}
           ai.cash += proceeds
           trade = { ...trade, qty, price, amount: proceeds }
           ai.totalTrades++
-          if (gainPct > 0) ai.wins++ else ai.losses++
+          if (gainPct > 0) { ai.wins++ } else { ai.losses++ }
         }
       }
 
